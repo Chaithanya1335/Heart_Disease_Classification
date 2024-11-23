@@ -12,6 +12,7 @@
 
 
 => second execute this command 
+
                 pip install -r requirements.txt
 
 => Third execute python DataIngestion.py (You need to give entire path of DataIngestion.py file) 
