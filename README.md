@@ -15,8 +15,9 @@
 
                 pip install -r requirements.txt
 
-=> Third execute python DataIngestion.py (You need to give entire path of DataIngestion.py file) 
-"# This will Train the model and save data Preprocessing and model objects later used for prediction." 
+=> Third execute This command 
+                
+                python DataIngestion.py 
 
-"# Heart_disease_Classification" 
-"# Heart_Disease_Classification" 
+
+ 
