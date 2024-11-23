@@ -1,0 +1,6 @@
+catboost
+xgboost
+flask
+pandas 
+scikit-learn
+-e .
