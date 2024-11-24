@@ -11,6 +11,7 @@
         conda activate venv/ 
 
 
+
 => second execute this command 
 
                 pip install -r requirements.txt
