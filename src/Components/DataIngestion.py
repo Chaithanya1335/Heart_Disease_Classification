@@ -2,9 +2,9 @@ from src.exception import CustomException
 from src.logger import logging
 from sklearn.model_selection import train_test_split
 from src.Components.DataTransformation import DataTransformation
-from src.Components.DataTransformation import DataTransformationConfig
 from src.Pipeline.Model_Training_pipeline import ModelTraining
-from src.Pipeline.Model_Training_pipeline import ModelConfig
+from src.Pipeline.predict_pipeline import CustomData
+from src.Pipeline.predict_pipeline import Predict
 import os
 import sys 
 import pandas as pd
@@ -33,11 +33,11 @@ class DataIngestion:
 
             os.makedirs(os.path.dirname(self.DataIngestionConfig.train_path),exist_ok=True)
 
-            train_data.to_csv(self.DataIngestionConfig.train_path)
+            train_data.to_csv(self.DataIngestionConfig.train_path,index=False,header=True)
 
-            test_data.to_csv(self.DataIngestionConfig.test_path)
+            test_data.to_csv(self.DataIngestionConfig.test_path,index=False,header=True)
 
-            data.to_csv(self.DataIngestionConfig.raw_path)
+            data.to_csv(self.DataIngestionConfig.raw_path,index=False,header=True)
 
             logging.info("Data Ingestion Completed")
 
@@ -45,7 +45,9 @@ class DataIngestion:
         except Exception as e:
             raise CustomException(e,sys)
         
-if __name__ =='__main__':
+if __name__ == "__main__":
     train_path,test_path = DataIngestion().intiate_data_ingestion()
-    train_data,test_data = DataTransformation().initiate_data_Transformation(train_path,test_path)
+    train_data,test_data,x_test = DataTransformation().initiate_data_Transformation(train_path,test_path)
     model_path = ModelTraining().initiate_model_training(train_data,test_data)
+ 
+    predictions = Predict().predict(x_test)

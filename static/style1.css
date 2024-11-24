@@ -1,7 +1,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: hwb(104 70% 18%);
+    background-color: #7accc1;
     margin: 0;
     padding: 0;
     background-size: cover; /* Ensures the image covers the whole screen */
@@ -11,7 +11,14 @@ body {
 
 h1 {
     text-align: center;
-    color: hwb(116 18% 26%);
+    color: #443b1b;
+}
+
+div{
+    align-items: center;
+    padding-top: 20%;
+    min-height: max-content;
+    
 }
 
 
@@ -21,7 +28,7 @@ h1 {
     margin: 50px auto;
     align-content: normal;
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px #ae6345dd;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px hsla(17, 43%, 48%, 0.867);
 }
 

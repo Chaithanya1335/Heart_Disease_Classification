@@ -43,7 +43,7 @@ option {
 
 
 form {
-    background-color: hsl(134, 34%, 73%);
+    background-color: hwb(0 93% 7%);
     
 }
 
@@ -52,6 +52,7 @@ input {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    
     
 }
 
@@ -73,8 +74,8 @@ button:hover {
 .result {
     margin-top: 20px;
     padding: 15px;
-    background-color: #d4edda;
-    color: #155724;
+    background-color: hsl(60, 37%, 48%);
+    color: hsl(21, 61%, 59%);
     border: 1px solid #c3e6cb;
     border-radius: 5px;
     text-align: center;

@@ -89,8 +89,8 @@ class DataTransformation:
             )
 
             
-
-            return train_data_new,test_data_new
+            x_test = input_test_data
+            return train_data_new,test_data_new,x_test
         except Exception as e:
             raise CustomException(e,sys)
     

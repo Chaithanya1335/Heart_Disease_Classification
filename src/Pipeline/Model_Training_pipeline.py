@@ -10,7 +10,6 @@ from sklearn.ensemble import (RandomForestClassifier,AdaBoostClassifier,Gradient
 from sklearn.svm import SVC
 from xgboost import XGBClassifier
 from catboost import CatBoostClassifier
-from sklearn.metrics import accuracy_score
 from src.Utils import evaluate_model
 from dataclasses import dataclass
 from src.Utils import save_object
@@ -88,7 +87,7 @@ class ModelTraining:
                 self.modelconfig.model_obj_path,
                 best_model
             )
-            return self.modelconfig.model_obj_path
+            return (self.modelconfig.model_obj_path)
         except Exception as e:
             raise CustomException(e,sys)
    

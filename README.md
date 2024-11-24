@@ -1,4 +1,4 @@
-"# Heart_disease_Classification" 
+"# End to End Pipeline For Heart_disease_Classification  " 
 
 "How to Run ??"
 
@@ -23,3 +23,7 @@
 "# You need to give entire path of DataIngestion.py file # "
  
 "# This will Train the model and save data Preprocessing and model objects later used for prediction." 
+
+"## IF u want to test model predictions with custom Data Try the below comand "
+
+                python app.py
