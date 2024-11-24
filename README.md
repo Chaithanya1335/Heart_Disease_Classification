@@ -8,7 +8,7 @@
 
 
         conda create -p venv python==3.8 -y 
-        conda activate vev/ 
+        conda activate venv/ 
 
 
 => second execute this command 
