@@ -5,10 +5,10 @@
 """
 => First create a virtual Environment and activate environment by following commands:
 
-"replace name of the environment with your name what ever you want"
 
-        conda create -p name_of_the_environment python==3.8 -y 
-        conda activate name_of_the_environment/ 
+
+        conda create -p venv python==3.8 -y 
+        conda activate vev/ 
 
 
 => second execute this command 
